@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hi there')
+    res.send('Bye there');
 });
 
 app.listen(8080, () => {
-    console.log("Im up!")
+    console.log("Im up!");
 })
