@@ -10,6 +10,7 @@ app.use(bodyParser.json())
 app.post('/events', (req, res) => {
 
     const { type, data } = req.body;
+    console.log("Received event", data);
 
 
     if (type === 'CommentCreated') {
@@ -26,7 +27,6 @@ app.post('/events', (req, res) => {
         };
 
         axios.post(`http://event-bus-srv:4005/events`, eventStructure );
-        console.log("Received event", data);
         console.log("Created Moderation:", eventStructure)
     };
 

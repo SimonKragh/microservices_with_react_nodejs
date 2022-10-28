@@ -60,7 +60,7 @@ app.post('/events', async (req, res) => {
                 content,
                 status
             }
-        })
+        });
     }
 });
 
