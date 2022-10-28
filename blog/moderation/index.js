@@ -25,7 +25,7 @@ app.post('/events', (req, res) => {
             }
         };
 
-        axios.post(`http://localhost:4005/events`, eventStructure );
+        axios.post(`http://event-bus-srv:4005/events`, eventStructure );
         console.log("Received event", data);
         console.log("Created Moderation:", eventStructure)
     };
