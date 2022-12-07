@@ -45,7 +45,7 @@ router.post(
 
     console.log(`Created new user: ${user.id}`);
 
-    res.status(200).send(user);
+    res.status(201).send(user);
   }
 );
 
